@@ -11,6 +11,6 @@ eureka:
       defaultZone:
         # ${protocol} = http || https
         # ${server.port} = 한 서버에 여러개의 유레카 서버가 있을 경우 대비
-        -${protocol}://${eureka.instance.hostname}:${server.port}/eureka/
+        - ${protocol}://${eureka.instance.hostname}:${server.port}/eureka/
   server :
     waitTimeInMsWhenSyncEmpty: 30000 # 30초에 한번씩 분산된 인스턴스 서버 검색
