@@ -13,3 +13,7 @@ spring:
   file:
     upload.path: C:/Users/admin/Desktop/resource/uploads/
     upload.url: /uploads/
+
+  # cors 설정
+  cors:
+    allowed: https://pintech.onedu.blue, http://localhost:3000
