@@ -1,0 +1,15 @@
+spring:
+  # DB 설정
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddlAuto: update
+
+  # File Upload 경로
+  file:
+    upload.path: C:/Users/admin/Desktop/resource/uploads/
+    upload.url: /uploads/
