@@ -36,7 +36,7 @@ spring:
           filters:
             - RewritePath=/api/v1/file/?(?<path>.*),/$\{path}
 
-          # api
+          # payment
         - id: payment-service
           uri: lb://payment-service
           predicates:
@@ -51,14 +51,6 @@ spring:
             - Path=/api/v1/ai/** # 실제 접근 경로
           filters:
             - RewritePath=/api/v1/ai/?(?<path>.*),/$\{path}
-
-          # mypage
-        - id: mypage-service
-          uri: lb://mypage-service
-          predicates:
-            - Path=/api/v1/mypage/** # 실제 접근 경로
-          filters:
-            - RewritePath=/api/v1/mypage/?(?<path>.*),/$\{path}
 
           # email
         - id: email-service
