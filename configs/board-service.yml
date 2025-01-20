@@ -1,7 +1,7 @@
 server:
   port: 3005
 
-spring:
+spring: ####
   # DB 설정
   datasource:
     driverClassName: oracle.jdbc.driver.OracleDriver
