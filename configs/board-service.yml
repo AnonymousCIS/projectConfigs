@@ -2,6 +2,12 @@ server:
   port: 3005
 
 spring: ####
+  # redis 설정 - Session 공간 분리
+  data:
+    redis:
+      host: ${redis.host}
+      port: ${redis.port}
+      
   # DB 설정
   datasource:
     driverClassName: oracle.jdbc.driver.OracleDriver
@@ -45,7 +51,7 @@ springdoc:
 
 # cors 설정
 cors:
-  allowed: https://onedu.blue, https://pintech.onedu.blue, http://localhost:3000
+  allowed: https://onedu.blue, https://pintech.onedu.blue, http://localhost:3000, http://localhost:3005
 
 # Front & Domain
 front:
