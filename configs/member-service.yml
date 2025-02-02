@@ -2,6 +2,12 @@ server:
   port: 3011
 
 spring:
+  # redis 추가완 - kks 20250202
+  data:
+    redis:
+      host: ${redis.host}
+      port: ${redis.port}
+
   # DB 설정
   datasource:
     driverClassName: oracle.jdbc.driver.OracleDriver
