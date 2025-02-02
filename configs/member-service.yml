@@ -2,7 +2,7 @@ server:
   port: 3011
 
 spring:
-  # redis 추가 - kks 20250202
+  # redis 추가완 - kks 20250202
   data:
     redis:
       host: ${redis.host}
