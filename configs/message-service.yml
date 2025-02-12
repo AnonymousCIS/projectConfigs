@@ -49,7 +49,7 @@ cors:
 
 # Front & Domain
 front:
-  domain: https://cis-pinetech.onedu.blue,https://admin-cis-pintech.onedu.blue,http://localhost:3000
+  domain: https://cis-pintech.onedu.blue,https://admin-cis-pintech.onedu.blue,http://localhost:3000
 
 # 유레카 설정
 eureka:
