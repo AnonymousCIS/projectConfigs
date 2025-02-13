@@ -55,7 +55,7 @@ springdoc:
 
 # cors 설정
 cors:
-  allowed: https://pintech.onedu.blue,http://localhost:3000
+  allowed: https://cis-pintech.onedu.blue,https://admin-cis-pintech.onedu.blue,http://localhost:3000,http://localhost:3100
 
 # 유레카 설정
 eureka:
