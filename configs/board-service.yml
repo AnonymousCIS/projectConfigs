@@ -7,6 +7,8 @@ spring: ####
     redis:
       host: ${redis.host}
       port: ${redis.port}
+  jackson:
+    serialization.fail-on-empty-beans: false
       
   # DB 설정
   datasource:
